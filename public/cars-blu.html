@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Cars Blu LLC | Miami Car Dealer</title>
+<meta name="description" content="Cars Blu LLC — Miami car dealer. New, used, and luxury vehicles. Sales, financing, trade-ins, and service. 66 W Flagler St, Suite 900."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#0A2540;--blue:#1B4F9C;--paper:#F4F6F8;--fg:#122033;--muted:#5B6B7C;--line:#D5DCE3;--white:#fff;--silver:#C5CDD6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Outfit,system-ui,sans-serif;background:var(--paper);color:var(--fg);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Barlow Condensed",sans-serif;font-weight:600;letter-spacing:.01em;text-wrap:balance}
+a{color:inherit}img{max-width:100%;display:block}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand b{display:block;font-family:"Barlow Condensed",sans-serif;font-size:22px;color:var(--navy)}
+.brand small{display:block;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+nav.links{display:flex;gap:16px;flex-wrap:wrap}
+nav.links a{font-size:14px;text-decoration:none;color:var(--muted)}
+nav.links a:hover{color:var(--navy)}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 18px;background:var(--blue);color:#fff;text-decoration:none;border:0;font:500 14px Outfit,sans-serif;cursor:pointer}
+.btn.navy{background:var(--navy)}.btn.out{background:#fff;color:var(--fg);border:1px solid var(--line)}
+.hero{position:relative;background:var(--navy);color:#fff;min-height:70vh;display:flex;align-items:flex-end}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35}
+.hero .shade{position:absolute;inset:0;background:rgba(10,37,64,.72)}
+.hero .inner{position:relative;padding:72px 20px 56px;max-width:1100px;margin:0 auto;width:100%}
+.hero h1{font-size:clamp(36px,6vw,64px);line-height:.95;margin:8px 0 12px;max-width:14ch}
+.kicker{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--silver)}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);margin:32px 0}
+.card{background:#fff;padding:22px;text-decoration:none}
+.card h3{margin:8px 0 6px;font-size:22px;color:var(--navy)}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.inv{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.vcard{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column}
+.vcard img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.vcard .p{padding:14px}
+.tag{position:absolute;left:10px;top:10px;background:var(--navy);color:#fff;font-size:10px;padding:4px 8px;text-transform:uppercase}
+.rel{position:relative}
+.price{font-size:18px;margin:8px 0}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 24px}
+.filters button{height:40px;padding:0 14px;border:1px solid var(--line);background:#fff;cursor:pointer;font:14px Outfit,sans-serif}
+.filters button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+section{padding:48px 0}
+form{background:#fff;border:1px solid var(--line);padding:22px}
+label{display:block;font-size:12px;color:var(--muted);margin:0 0 6px}
+input,textarea,select{width:100%;height:44px;border:1px solid var(--line);padding:0 12px;margin-bottom:14px;font:14px Outfit,sans-serif}
+textarea{height:100px;padding:10px 12px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+footer{background:var(--navy);color:#fff;padding:48px 0}
+footer .g{display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px}
+footer li{display:flex;justify-content:space-between;gap:12px;font-size:14px;color:var(--silver);margin:4px 0}
+.ok{background:#fff;border:1px solid var(--line);padding:20px}
+.menu{display:none}
+@media (max-width:900px){
+.grid4,.inv,footer .g,.row{grid-template-columns:1fr}
+nav.links{display:none}
+.menu{display:block;background:0;border:0;font-size:22px;cursor:pointer}
+nav.links.open{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:68px;background:#fff;padding:12px 20px;border-bottom:1px solid var(--line)}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">
+      <svg width="44" height="44" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="98" fill="#0A2540"/><circle cx="100" cy="100" r="92" fill="none" stroke="#C5CDD6" stroke-width="5"/><text x="100" y="52" text-anchor="middle" fill="#fff" font-family="Arial" font-size="22" font-weight="700" letter-spacing="2">CARS BLU</text><g fill="none" stroke="#fff" stroke-width="4" stroke-linejoin="round"><path d="M42 118 C50 98 70 90 100 90 C130 90 150 98 158 118 L168 118 C170 118 172 120 172 124 L172 132 L38 132 L38 124 C38 120 40 118 42 118 Z"/><path d="M70 90 L80 78 L120 78 L130 90"/><circle cx="64" cy="132" r="12"/><circle cx="136" cy="132" r="12"/></g><text x="100" y="168" text-anchor="middle" fill="#C5CDD6" font-family="Arial" font-size="16" font-weight="600" letter-spacing="4">LLC</text></svg>
+      <span><b>CARS BLU</b><small>Miami · LLC</small></span>
+    </a>
+    <button class="menu" id="menuBtn" aria-label="Menu">☰</button>
+    <nav class="links" id="nav">
+      <a href="#inventory">Inventory</a>
+      <a href="#finance">Finance</a>
+      <a href="#trade">Trade-in</a>
+      <a href="#service">Service</a>
+      <a href="#visit">Book a visit</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:+17543495960">(754) 349-5960</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=2000&q=80" alt=""/>
+  <div class="shade"></div>
+  <div class="inner">
+    <p class="kicker">Cars Blu LLC · Downtown Miami</p>
+    <h1>Drive it home from Flagler Street.</h1>
+    <p style="max-width:42ch;color:var(--silver)">New, used, and luxury inventory. Financing, trade-ins, service, and scheduled visits from Suite 900.</p>
+    <p style="margin-top:22px">
+      <a class="btn" href="#inventory">Browse inventory</a>
+      <a class="btn out" href="tel:+17543495960" style="margin-left:8px">Call (754) 349-5960</a>
+    </p>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="grid4">
+    <a class="card" href="#inventory"><h3>Sales</h3><p>New, used, and luxury on one lot.</p></a>
+    <a class="card" href="#finance"><h3>Finance</h3><p>Apply in a few minutes.</p></a>
+    <a class="card" href="#trade"><h3>Trade-in</h3><p>We appraise on site.</p></a>
+    <a class="card" href="#service"><h3>Service</h3><p>Maintenance by appointment.</p></a>
+  </div>
+</div>
+
+<section id="inventory">
+  <div class="wrap">
+    <p class="kicker">On the lot</p>
+    <h2>Inventory</h2>
+    <div class="filters" id="filters"></div>
+    <div class="inv" id="inv"></div>
+  </div>
+</section>
+
+<section id="finance"><div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:32px" class="row">
+  <div><h2>Financing</h2><p style="color:var(--muted)">Apply with Cars Blu. We work with local and national lenders. A finance manager will call you.</p></div>
+  <form data-kind="finance"><label>Full name</label><input name="name" required/><div class="row"><div><label>Phone</label><input name="phone" required/></div><div><label>Email</label><input type="email" name="email" required/></div></div><label>Requested amount</label><input name="amount" placeholder="$"/><label>Notes</label><textarea name="note"></textarea><button class="btn" type="submit">Submit application</button></form>
+</div></section>
+
+<section id="trade"><div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+  <div><h2>Trade-in</h2><p style="color:var(--muted)">Tell us about your current vehicle. We appraise on site at Suite 900.</p></div>
+  <form data-kind="trade"><label>Full name</label><input name="name" required/><div class="row"><div><label>Phone</label><input name="phone" required/></div><div><label>Email</label><input type="email" name="email" required/></div></div><div class="row"><div><label>Year</label><input name="year"/></div><div><label>Make</label><input name="make"/></div></div><label>Model</label><input name="model"/><label>Miles</label><input name="miles"/><button class="btn" type="submit">Request an appraisal</button></form>
+</div></section>
+
+<section id="service"><div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+  <div><h2>Service</h2><p style="color:var(--muted)">Oil, brakes, diagnostics, and scheduled maintenance. Service follows dealer hours.</p></div>
+  <form data-kind="service"><label>Full name</label><input name="name" required/><div class="row"><div><label>Phone</label><input name="phone" required/></div><div><label>Email</label><input type="email" name="email" required/></div></div><label>Vehicle</label><input name="vehicle" placeholder="Year make model"/><label>Preferred date</label><input type="date" name="pref"/><button class="btn" type="submit">Request a service appointment</button></form>
+</div></section>
+
+<section id="visit"><div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+  <div><h2>Book a visit</h2><p style="color:var(--muted)">Come see a vehicle at 66 W Flagler St, Suite 900, Miami, FL 33130.</p><p id="visitCar" style="display:none;border:1px solid var(--line);padding:12px;background:#fff"></p></div>
+  <form data-kind="visit"><label>Full name</label><input name="name" required/><div class="row"><div><label>Phone</label><input name="phone" required/></div><div><label>Email</label><input type="email" name="email" required/></div></div><label>Preferred date</label><input type="date" name="when"/><button class="btn" type="submit">Book this visit</button></form>
+</div></section>
+
+<section id="contact"><div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+  <div>
+    <h2>Contact</h2>
+    <p>66 W Flagler St, Suite 900<br/>Miami, FL 33130</p>
+    <p><a href="tel:+17543495960">(754) 349-5960</a></p>
+    <p><a href="https://maps.google.com/?q=66+W+Flagler+St+Suite+900+Miami+FL+33130" target="_blank" rel="noreferrer">Open in Google Maps</a></p>
+    <ul style="list-style:none;padding:0;max-width:280px">
+      <li style="display:flex;justify-content:space-between"><span>Monday</span><span>9 AM – 12 AM</span></li>
+      <li style="display:flex;justify-content:space-between"><span>Tuesday</span><span>12–6 AM, 9 AM–6 PM</span></li>
+      <li style="display:flex;justify-content:space-between"><span>Wednesday</span><span>9 AM – 6 PM</span></li>
+      <li style="display:flex;justify-content:space-between"><span>Thursday</span><span>9 AM – 6 PM</span></li>
+      <li style="display:flex;justify-content:space-between"><span>Friday</span><span>9 AM – 6 PM</span></li>
+      <li style="display:flex;justify-content:space-between"><span>Saturday</span><span>10 AM – 7 PM</span></li>
+      <li style="display:flex;justify-content:space-between"><span>Sunday</span><span>Closed</span></li>
+    </ul>
+  </div>
+  <form data-kind="contact"><label>Full name</label><input name="name" required/><div class="row"><div><label>Phone</label><input name="phone" required/></div><div><label>Email</label><input type="email" name="email" required/></div></div><label>Message</label><textarea name="note"></textarea><button class="btn" type="submit">Send message</button></form>
+</div></section>
+
+<footer>
+  <div class="wrap g">
+    <div>
+      <h3>CARS BLU LLC</h3>
+      <p style="color:var(--silver);font-size:14px">Car dealer · Miami, Florida<br/>New, used, and luxury. Sales, financing, trade-ins, and service.</p>
+    </div>
+    <div>
+      <p>66 W Flagler St, Suite 900<br/>Miami, FL 33130<br/><a href="tel:+17543495960" style="color:#fff">(754) 349-5960</a></p>
+    </div>
+    <div>
+      <p style="color:var(--silver);font-size:12px;letter-spacing:.16em;text-transform:uppercase">Hours</p>
+      <ul style="list-style:none;padding:0;margin:8px 0 0">
+        <li><span>Mon</span><span>9 AM–12 AM</span></li>
+        <li><span>Tue</span><span>12–6 AM, 9 AM–6 PM</span></li>
+        <li><span>Wed–Fri</span><span>9 AM–6 PM</span></li>
+        <li><span>Sat</span><span>10 AM–7 PM</span></li>
+        <li><span>Sun</span><span>Closed</span></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+const CARS = [
+  {id:"camry-25",y:2025,make:"Toyota",model:"Camry",trim:"XSE",cond:"New",cat:"Sedan",price:33990,miles:12,img:"https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&w=1200&q=80"},
+  {id:"crv-25",y:2025,make:"Honda",model:"CR-V",trim:"EX-L",cond:"New",cat:"SUV",price:36450,miles:8,img:"https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1200&q=80"},
+  {id:"tucson-25",y:2025,make:"Hyundai",model:"Tucson",trim:"SEL",cond:"New",cat:"SUV",price:31200,miles:5,img:"https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=80"},
+  {id:"silverado-24",y:2024,make:"Chevrolet",model:"Silverado 1500",trim:"LT",cond:"New",cat:"Truck",price:48990,miles:18,img:"https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&w=1200&q=80"},
+  {id:"sportage-25",y:2025,make:"Kia",model:"Sportage",trim:"SX",cond:"New",cat:"SUV",price:33750,miles:9,img:"https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1200&q=80"},
+  {id:"bmw-3",y:2024,make:"BMW",model:"330i",trim:"xDrive",cond:"Used",cat:"Luxury",price:42900,miles:18420,img:"https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=80"},
+  {id:"c300",y:2023,make:"Mercedes-Benz",model:"C 300",trim:"4MATIC",cond:"Used",cat:"Luxury",price:39850,miles:22110,img:"https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1200&q=80"},
+  {id:"model-y",y:2024,make:"Tesla",model:"Model Y",trim:"Long Range",cond:"Used",cat:"Electric",price:39990,miles:15200,img:"https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=1200&q=80"},
+  {id:"cayenne",y:2021,make:"Porsche",model:"Cayenne",trim:"S",cond:"Used",cat:"Luxury",price:62900,miles:31880,img:"https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80"},
+  {id:"rx350",y:2023,make:"Lexus",model:"RX 350",trim:"Premium",cond:"Used",cat:"Luxury",price:47950,miles:19840,img:"https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1200&q=80"},
+  {id:"f150",y:2022,make:"Ford",model:"F-150",trim:"XLT",cond:"Used",cat:"Truck",price:36800,miles:41200,img:"https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&w=1200&q=80"},
+  {id:"a4",y:2020,make:"Audi",model:"A4",trim:"Premium Plus",cond:"Used",cat:"Sedan",price:24990,miles:48600,img:"https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1200&q=80"}
+];
+const usd = n => n.toLocaleString("en-US",{style:"currency",currency:"USD",maximumFractionDigits:0});
+let filter = "All";
+function render(){
+  const box = document.getElementById("inv");
+  const list = CARS.filter(c => filter==="All" || (filter==="Luxury"?c.cat==="Luxury":c.cond===filter));
+  box.innerHTML = list.map(c => `<article class="vcard">
+    <div class="rel"><img src="${c.img}" alt="${c.y} ${c.make} ${c.model}"/><span class="tag">${c.cond}</span></div>
+    <div class="p"><h3 style="margin:0;color:var(--navy)">${c.y} ${c.make} ${c.model}</h3>
+    <div class="price">${usd(c.price)}</div>
+    <p style="color:var(--muted);font-size:13px;margin:0 0 10px">${c.trim} · ${c.miles.toLocaleString()} mi</p>
+    <a class="btn" href="#visit" onclick="pick('${c.id}')">Book a visit</a></div></article>`).join("");
+}
+document.getElementById("filters").innerHTML = ["All","New","Used","Luxury"].map(f=>`<button type="button" data-f="${f}" class="${f==="All"?"on":""}">${f}</button>`).join("");
+document.getElementById("filters").onclick = e => {
+  const b = e.target.closest("button"); if(!b) return;
+  filter = b.dataset.f; [...e.currentTarget.children].forEach(x=>x.classList.toggle("on",x===b)); render();
+};
+function pick(id){
+  const c = CARS.find(x=>x.id===id); const el=document.getElementById("visitCar");
+  el.style.display="block"; el.textContent = "Interested in "+c.y+" "+c.make+" "+c.model;
+}
+render();
+document.getElementById("menuBtn").onclick = () => document.getElementById("nav").classList.toggle("open");
+document.querySelectorAll("form").forEach(f => f.onsubmit = e => {
+  e.preventDefault();
+  const id = "CB-"+Math.floor(100000+Math.random()*900000);
+  f.outerHTML = `<div class="ok"><strong>We have it.</strong><p>Reference ${id}. A Cars Blu advisor will follow up.</p></div>`;
+});
+</script>
+</body>
+</html>

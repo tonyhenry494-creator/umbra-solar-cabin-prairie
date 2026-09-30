@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Cars Blu LLC",
+      "hasCanvas": false,
+      "bodyTextLen": 1459,
+      "bodyTextHash": "7f4f5828f3095e9797480983c488c774efdfccc1fcb73e1ace1c3473f109832e",
+      "bodyTextPrefix": "CARS BLU LLC CARS BLU MIAMI · LLC Home Inventory Finance Trade-i",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Cars Blu LLC",
+      "hasCanvas": false,
+      "bodyTextLen": 1370,
+      "bodyTextHash": "a6b56ce5752ca4303868c9b276f94b680df2a5f6c67a366d0e968bee23101486",
+      "bodyTextPrefix": "CARS BLU LLC CARS BLU MIAMI · LLC CARS BLU LLC · DOWNTOWN MIAMI ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

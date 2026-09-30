@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Aurelia Private Motorcar",
+      "hasCanvas": false,
+      "bodyTextLen": 2517,
+      "bodyTextHash": "daef5e45a2f21d1918821ec06a0789850321800fa927e67656ecbb582acc00b0",
+      "bodyTextPrefix": "AURELIA PRIVATE MOTORCAR HOME FLEET RESERVE JOURNEYS DESK Reques",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Aurelia Private Motorcar",
+      "hasCanvas": false,
+      "bodyTextLen": 2453,
+      "bodyTextHash": "88b882c0687a95cb08b1338cac3c6f186d3757a1d34ae67852603132f98d1c08",
+      "bodyTextPrefix": "AURELIA ESTABLISHED FOR PRIVATE TRAVEL Arrivals, composed. Chauf",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
